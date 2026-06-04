@@ -1,0 +1,4 @@
+azure-ai-textanalytics
+azure-ai-formrecognizer
+azure-identity
+python-dotenv

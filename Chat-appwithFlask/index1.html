@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+</head>
+<body>
+
+<h2>Azure OpenAI Chat</h2>
+
+<input type="text" id="msg" placeholder="Type message..." />
+<button onclick="send()">Send</button>
+
+<div id="chat"></div>
+
+<script>
+async function send() {
+    let msg = document.getElementById("msg").value;
+
+    let response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: msg})
+    });
+
+    let data = await response.json();
+
+    document.getElementById("chat").innerHTML += "<p><b>You:</b> " + msg + "</p>";
+    document.getElementById("chat").innerHTML += "<p><b>AI:</b> " + data.reply + "</p>";
+}
+</script>
+
+</body>
+</html>
