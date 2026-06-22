@@ -1,0 +1,17 @@
+python -m venv labenv
+.\labenv\Scripts\Activate.ps1
+  pip install -r requirements.txt
+
+  =================
+  az login
+python agent.py
+
+  ======================
+ Prompt1-  Find me the next event I can see from South America and give me the cost for 5 hours of premium telescope time at normal priority.
+ Prompt2- next_visible_event
+Prompt3- calculate_observation_cost
+  Prompt4- Generate that information in a report for Bellows College.
+
+  ===========
+  quit
+  deactivate
