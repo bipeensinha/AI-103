@@ -1,0 +1,13 @@
+Labfiles/04-integrate-agent-with-foundry-iq/Python
+
+python -m venv labenv
+./labenv/Scripts/activate
+pip install -r requirements.txt
+az login
+python agent_client.py
+==================Prompt==============\
+What types of outdoor products does Contoso offer?
+Tell me about the weatherproof features of your tents.
+What's the difference between your daypacks and expedition backpacks?
+history
+quit
