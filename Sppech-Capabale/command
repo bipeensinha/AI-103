@@ -1,0 +1,11 @@
+git clone https://github.com/microsoftlearning/mslearn-ai-language
+cd mslearn-ai-language\Labfiles\03-gen-ai-speech\Python>
+python -m venv labenv
+.\labenv\Scripts\activate
+cd mslearn-ai-language\Labfiles\03-gen-ai-speech\Python\generate-speech\
+az login
+python generate-speech.py
+
+cd mslearn-ai-language\Labfiles\03-gen-ai-speech\Python\generate-speech\transcribe-speech\  
+  az login
+python transcribe-speech.py
