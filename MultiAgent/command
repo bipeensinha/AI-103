@@ -1,0 +1,11 @@
+
+https://github.com/MicrosoftLearning/mslearn-ai-agents.git
+cd mslearn-ai-agents/Labfiles/08-agent-orchestration/python
+python -m venv labenv
+.\labenv\Scripts\Activate.ps1
+  pip install -r requirements.txt
+
+  =========================
+  az login
+python agents.py
+  I reached out to your customer support yesterday because I couldn't access my account. The representative responded almost immediately, was polite and professional, and fixed the issue within minutes. Honestly, it was one of the best support experiences I've ever had.
