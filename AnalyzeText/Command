@@ -1,0 +1,10 @@
+Git clone https://github.com/microsoftlearning/mslearn-ai-language
+cd /Labfiles/01-analyze-text/Python/text-analysis
+python -m venv labenv
+.\labenv\Scripts\activate
+
+pip install -r requirements.txt
+
+az login
+python text-analysis.py
+
