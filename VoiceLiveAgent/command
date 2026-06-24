@@ -1,0 +1,9 @@
+git clone https://github.com/microsoftlearning/mslearn-ai-language
+CD mslearn-ai-language/Labfiles/06-voice-live/Python/chat-client
+  python -m venv labenv
+.\labenv\Scripts\activate
+pip install -r requirements.txt azure-identity azure-ai-voicelive==1.2.0b4 --pre azure-ai-projects==2.0.0b4
+  az login
+python chat-client.py
+  
+  
